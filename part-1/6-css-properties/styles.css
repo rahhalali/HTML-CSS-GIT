@@ -1,1 +1,16 @@
 /* Add your CSS code below */
+.message a {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+}
+.message {
+  font-size: 0.9em;
+  line-height: 50px;
+}
+.message:last-child {
+  border-left: 2px solid blue;
+}
+.messages .message .message__time--old {
+  opacity: 0.5;
+}
