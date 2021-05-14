@@ -1,6 +1,28 @@
 /* Try different box model properties below */
+* {
+  padding: 0;
+  margin: 0;
+}
 .pages__page {
   border: 1px solid #4491db;
   border-radius: 4px;
   background: #fff;
 }
+
+.countries .country {
+  list-style: none;
+  padding: 10px;
+  margin: 5px 0px;
+  border: 1px solid red;
+  height: 30px;
+  line-height: 30px;
+}
+/***********************************
+  margin-left: -10px;
+  margin-top: 3px;
+  padding: 7px 5px 7px 7px;
+
+  width: 100%;
+margin-left:-10px;
+margin-top: 10px;
+  */
