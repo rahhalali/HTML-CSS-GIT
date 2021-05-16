@@ -12,9 +12,9 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
+      <header>
         <div class="site-header__title">C.Y.F</div>
-        <div class="main-nav">
+        <nav>
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
@@ -26,7 +26,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -48,7 +48,7 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
@@ -56,13 +56,37 @@
         <form method="GET" class="contact-form">
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
           </div>
           <div class="contact-form__field">
+            <label for="area">Message</label>
             <textarea
               name="message"
+              id="area"
               placeholder="Your message should not be longer than 200 words."
+              required
             ></textarea>
+            <br />
+            <fieldset>
+              <legend>What brach are u interested in?</legend>
+              <label>
+                <input type="radio" name="branch" value="branch" id="Beirut" />
+                Beirut <br />
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="branch" value="branch" id="Bekaa" />
+                Bekaa <br />
+              </label>
+              <br />
+              <label>
+                <input type="radio" name="branch" value="branch" id="Sour" />
+                Sour
+              </label>
+            </fieldset>
           </div>
           <button type="submit">Send</button>
         </form>
@@ -74,7 +98,7 @@
             href="https://github.com/coditech/Submissions/tree/master/Exercises/html-css-git-exercises"
             >Built</a
           >
-          with ♥ for <a href="https://codi.tech/">Codi</a>.
+          with <span class="love">♥</span> for <a href="https://codi.tech/">Codi</a>.
         </p>
         <p>
           <svg

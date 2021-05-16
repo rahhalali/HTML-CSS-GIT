@@ -1,1 +1,58 @@
 /* Add your own CSS code below */
+.love {
+  color: #c85308;
+}
+@media (min-width: 992px) {
+  h2.hero__title {
+    font-size: 3rem;
+  }
+}
+ul.main-nav__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+li.main-nav__list-item {
+  flex-direction: row;
+}
+@media (min-width: 767px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav,
+  .site-header__title,
+  .site-search {
+    flex-direction: row;
+  }
+  .main-nav__list-item {
+    margin: 2%;
+  }
+  .views {
+    display: flex;
+    align-items: center;
+  }
+  .views h2,
+  a {
+    margin: 1%;
+  }
+  .views a {
+    display: flex;
+  }
+  .views .views__all {
+    margin-left: auto;
+  }
+}
+article.main-article {
+  max-width: 50em;
+  display: flex;
+}
+article.main-article {
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.9em;
+}
+.site-content {
+  display: flex;
+  justify-content: center;
+}
